@@ -1,200 +1,182 @@
 :root {
-    --maim-font: "Roboto", sans-serif;
-    --second-font: "Raleway", sans-serif;
-    --color-accent:#2196F3;
-    --bgr-color:#2F303A;
-    --color-title-text: #212121;
+  --main-font: 'Roboto', sans-serif;
+  --second-font: 'Raleway', sans-serif;
+  --color-accent: #2196f3;
+  --bgr-color: #2f303a;
+  --color-title-text: #212121;
+  --color-primary: #fff;
+  --color-secondary: #000;
+  --color-link: #757575;
+  --color-bgr-section: #f5f4fa;
 }
 body {
-    font-family: var(--maim-font);
-    color: #757575;
+  font-family: var(--main-font);
+  color: var(--color-link);
+  font-size: 14px;
 }
 .link {
-    text-decoration: none;
+  text-decoration: none;
 }
 .list {
-    list-style-type: none;
+  list-style-type: none;
 }
 .white-theme {
-    color: #000;
+  color: var(--color-secondary);
 }
 .black-theme {
-    color:#fff;
+  color: var(--color-primary);
 }
 
 /* ===============HEADER=============== */
 
 .logo {
-    font-family: var(--second-font);
-    font-size: 26px;
-    font-weight: 700;
-    line-height: 1.2;
-    letter-spacing: 0.03em;
+  font-family: var(--second-font);
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
 }
 .logo-word1 {
-    color: var(--color-accent);
+  color: var(--color-accent);
 }
-.navigation {
-    font-size: 14px;
-    font-weight: 500;
-    letter-spacing: 0.02em;
-    line-height: 1.15;
+.header-params {
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  line-height: 1.15;
+}
+.header-params:hover,
+.header-params:focus {
+  color: var(--color-accent);
 }
 .navigation-link {
-    color: var(--color-title-text);
-}
-.navigation-link:hover, 
-.navigation-link:focus {
-    color: var(--color-accent);
+  color: var(--color-title-text);
 }
 .contact-link {
-    color: #757575;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.15;
-    letter-spacing: 0.02em;
+  color: var(--color-link);
 }
-.contact-link:hover,
-.contact-link:focus {
-    color: var(--color-accent);
-}
-
 
 /* ===============SERVICE=============== */
 
 .service {
-    background-color: var(--bgr-color);
+  background-color: var(--bgr-color);
 }
 .service-title {
-    color: #fff;
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 1.34;
-    text-align: center;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;`
+  color: var(--color-primary);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.34;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
 }
 .service-button {
-    background-color: var(--color-accent);
-    color: #fff;
-    cursor: pointer;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.8;
-    text-align: center;
-    letter-spacing: 0.06em;
+  background-color: var(--color-accent);
+  color: var(--color-primary);
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.8;
+  text-align: center;
+  letter-spacing: 0.06em;
 }
 .service-button:hover,
 .service-button:focus {
-    background-color: #188CE8;
+  background-color: #188ce8;
 }
 
 /* ===============DESCRIPTION=============== */
 
 .description-item-title {
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: var(--color-title-text);
+  font-weight: 700;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--color-title-text);
 }
 .description-item-text {
-    font-size: 14px;
-    line-height: 1.7;
-    letter-spacing: 0.03em;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
 }
 
 /* ===============TASK=============== */
 
-.task-title {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.16;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: var(--color-title-text);
+.section-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--color-title-text);
 }
 
 /* ===============TEAM=============== */
 .team {
-    background-color:#F5F4FA;
+  background-color: var(--color-bgr-section);
 }
-.team-title {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.16;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: var(--color-title-text);
-}
+
 .team-item-title {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.18;
-    letter-spacing: 0.03em;
-    color: var(--color-title-text);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+  color: var(--color-title-text);
 }
 .team-item-text {
-    font-size: 16px;
-    line-height: 1.18;
-    letter-spacing: 0.03em;
+  font-size: 16px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
 }
 /* ===============FOOTER=============== */
 
-.footer{
-    background-color: var(--bgr-color);
+.footer {
+  background-color: var(--bgr-color);
+}
+
+.footer-params {
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+.footer-params:hover,
+.footer-params:focus {
+  color: var(--color-accent);
 }
 .footer-address {
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-    color:#fff
+  color: var(--color-primary);
 }
-.footer-address:hover,
-.footer-address:focus {
-    color: var(--color-accent)
-}
+
 .footer-address-link {
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-    color: rgba(255, 255, 255, 0.6);
-}
-.footer-address-link:hover,
-.footer-address-link:focus {
-    color: var(--color-accent)
+  color: rgba(255, 255, 255, 0.6);
 }
 
 /* ===============FILTER=============== */
 .filter-btn {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.62;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color:var(--color-title-text);
-    background-color: #F5F4FA;
-    border-radius: 4px;
-    cursor: pointer;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--color-title-text);
+  background-color: var(--color-bgr-section);
+  border-radius: 4px;
+  cursor: pointer;
 }
 .filter-btn:hover,
 .filter-btn:focus {
-    background-color: var(--color-accent);
-    color: #fff;
+  background-color: var(--color-accent);
+  color: var(--color-primary);
 }
 
 /* ===============PORTFOLIO=============== */
 .portfolio-card-title {
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 2;
-    letter-spacing: 0.06em;
-    color: var(--color-title-text);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--color-title-text);
 }
 .portfolio-card-text {
-    font-size: 16px;
-    line-height: 1.9;
-    letter-spacing: 0.03em;
-    color: #757575;
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.03em;
+  color: var(--color-link);
 }

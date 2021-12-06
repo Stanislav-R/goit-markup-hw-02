@@ -54,6 +54,9 @@ body {
 .contact-link {
   color: var(--color-link);
 }
+.active-link {
+  color: var(--color-accent);
+}
 
 /* ===============SERVICE=============== */
 
